@@ -19,7 +19,4 @@ class FlightConsoleFormat : Formatter<Flight> {
             """.trimIndent()
     }
 
-    override fun format(ts: List<Flight>): String {
-        TODO("Not yet implemented")
-    }
 }
