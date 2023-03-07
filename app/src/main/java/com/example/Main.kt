@@ -1,26 +1,43 @@
 package com.example
 
 import com.example.domain.model.*
-import com.example.domain.model.baggage.pack.regular.RegularBasic
-import com.example.domain.model.seat.Seat
-import com.example.domain.model.seat.SeatClass
-import com.example.domain.model.seat.SeatStatus
-import com.example.domain.usercase.GetFlights
-import com.example.presentation.flight.FlightConsoleFormat
-import com.example.presentation.flight.FlightHTMLFortmat
-import java.math.BigDecimal
-import java.time.LocalDateTime
-import java.time.Month
+import com.example.domain.presentation.Formatter
+import com.example.domain.usercase.flight.GetFlights
+import com.example.presentation.PresentationFormat
+import com.example.presentation.flight.FlightPresentationFactory
 
 fun main() {
+/*
+    val format = PresentationFormat.HTML
+    val flightFormat: Formatter<Flight> = FlightPresentationFactory().getPresentationFormat(format)
+    //val flights = GetFlights(flightFormat).invoke()
+    println(flights)*/
 
-    val getFlights = GetFlights(FlightHTMLFortmat())
+
+//    val getFlights = GetFlights(flightFormat1)
+//    val flightFormat = getFlights.invoke()
+//    println(flightFormat)
+
+
+/*val format = "HTML"
+    val flightFormat1 : Formatter<Flight> = when (format) {
+        "HTML" -> {
+            FlightHTMLFortmat()
+        }
+        "Console" -> {
+            FlightConsoleFormat()
+        }
+        else -> {
+            FlightConsoleFormat()
+        }
+    }*/
+   /* val getFlights = GetFlights(FlightHTMLFortmat())
     val flightFormat = getFlights.invoke()
     println(flightFormat)
 
     val getFlights1 = GetFlights(FlightConsoleFormat())
-    val flightFormat1 = getFlights1.invoke()
-    println(flightFormat1)
+    val flightFormat2 = getFlights1.invoke()
+    println(flightFormat2)*/
 
 }
 

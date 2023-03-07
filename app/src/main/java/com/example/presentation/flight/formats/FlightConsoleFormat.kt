@@ -1,4 +1,4 @@
-package com.example.presentation.flight
+package com.example.presentation.flight.formats
 
 import com.example.domain.model.Flight
 import com.example.domain.presentation.Formatter

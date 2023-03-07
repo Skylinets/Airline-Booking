@@ -7,12 +7,12 @@ import java.time.Duration
 
 data class Flight(
     val number: String,
-    val airCraf: AirCraf,
+    val airCraft: AirCraft,
     val price: BigDecimal,
-    val departureArrivarBooking: Pair<AirportBooking, AirportBooking>,
+    val departureArrivalBooking: Pair<AirportBooking, AirportBooking>,
     val duration: Duration = Duration.between(
-        departureArrivarBooking.second.dateTime,
-        departureArrivarBooking.first.dateTime
+        departureArrivalBooking.second.dateTime,
+        departureArrivalBooking.first.dateTime
     )
 
 ) {
