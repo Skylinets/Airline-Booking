@@ -18,6 +18,10 @@ fun main() {
     val flightFormat = getFlights.invoke()
     println(flightFormat)
 
+    val getFlights1 = GetFlights(FlightConsoleFormat())
+    val flightFormat1 = getFlights1.invoke()
+    println(flightFormat1)
+
 }
 
 
