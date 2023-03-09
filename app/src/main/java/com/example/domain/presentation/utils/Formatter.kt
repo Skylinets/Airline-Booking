@@ -1,6 +1,4 @@
-package com.example.domain.presentation
-
-import com.example.domain.model.Flight
+package com.example.domain.presentation.utils
 
 
 //Generics (Clase parametrizada)

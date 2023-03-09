@@ -8,4 +8,9 @@ class ClubClassic(
 ) : VClub(price) {
     override val name: String = "Classic"
     override val boardingTurn: BoardingTurn = BoardingTurn.SECOND
+
+    override var price: BigDecimal = price
+        get(){
+            return super.price + BigDecimal(10)
+        }
 }

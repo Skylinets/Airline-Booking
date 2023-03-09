@@ -10,7 +10,8 @@ import java.time.Month
 class AirportBookingLocalSource(
     private val airportDataSource: AirportDataSource
 ) : AirportBookingDataSource {
-    override fun getAirBookinPairs(): List<Pair<AirportBooking, AirportBooking>> = listOf(
+
+    override fun getAirBookingPairs(): List<Pair<AirportBooking, AirportBooking>> = listOf(
         Pair(
             AirportBooking(
                 airport = airportDataSource.getAirports().random(),
@@ -83,4 +84,4 @@ class AirportBookingLocalSource(
         )
 
     )
-}
+    }

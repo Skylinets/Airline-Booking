@@ -1,7 +1,7 @@
 package com.example.presentation.ticket
 
 import com.example.domain.model.Ticket
-import com.example.domain.presentation.Formatter
+import com.example.domain.presentation.utils.Formatter
 import com.example.presentation.PresentationFactory
 import com.example.presentation.PresentationFormat
 import com.example.presentation.ticket.formats.TicketConsoleFormat

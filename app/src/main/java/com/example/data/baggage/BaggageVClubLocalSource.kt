@@ -1,0 +1,16 @@
+package com.example.data.baggage
+
+import com.example.domain.model.baggage.pack.BaggagePackage
+import com.example.domain.model.baggage.pack.vclub.ClubBasic
+import com.example.domain.model.baggage.pack.vclub.ClubClassic
+import com.example.domain.model.baggage.pack.vclub.ClubPlus
+
+class BaggageVClubLocalSource : BaggagePackageLocalSource() {
+    override fun getBaggagePacks(): Map<Int, BaggagePackage> {
+        return mapOf(
+            1 to ClubBasic(price),
+            2 to ClubClassic(price),
+            3 to ClubPlus(price)
+        )
+    }
+}

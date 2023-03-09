@@ -1,7 +1,7 @@
 package com.example.presentation.flight
 
 import com.example.domain.model.Flight
-import com.example.domain.presentation.Formatter
+import com.example.domain.presentation.utils.Formatter
 import com.example.presentation.PresentationFactory
 import com.example.presentation.PresentationFormat
 import com.example.presentation.flight.formats.FlightConsoleFormat

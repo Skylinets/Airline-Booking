@@ -12,7 +12,7 @@ abstract class BaggagePackage {
     abstract val price: BigDecimal
     abstract val boardingTurn: BoardingTurn
 
-    open val baggageType: List<BaggageType> = listOf(
+    open val baggageTypes: List<BaggageType> = listOf(
         Hand(),
         BigHand(),
         Checked()

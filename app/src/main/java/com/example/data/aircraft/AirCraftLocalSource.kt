@@ -1,9 +1,7 @@
 package com.example.data.aircraft
 
 import com.example.domain.datasource.aircraft.AirCraftDataSource
-import com.example.domain.datasource.airport.AirportDataSource
 import com.example.domain.model.AirCraft
-import com.example.domain.model.Airport
 import com.example.domain.model.seat.Seat
 import com.example.domain.model.seat.SeatClass
 import com.example.domain.model.seat.SeatSection
@@ -16,9 +14,9 @@ class AirCraftLocalSource : AirCraftDataSource {
         AirCraft("Airbus", "A320", getSeatSections())
     )
 
-    override fun AirCraft(name: String, model: String, airline: List<SeatSection>): AirCraft {
-        TODO("Not yet implemented")
-    }
+//    override fun AirCraft(name: String, model: String, airline: List<SeatSection>): AirCraft {
+//        TODO("Not yet implemented")
+//    }
 
     private fun getSeatSections(): List<SeatSection> {
         return listOf(

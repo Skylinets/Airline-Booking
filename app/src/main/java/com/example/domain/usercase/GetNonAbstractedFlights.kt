@@ -11,7 +11,7 @@ import java.time.Month
 import java.time.format.DateTimeFormatter
 
 class GetNonAbstractedFlights {
-    val format: PresentationFormat = TODO()
+    /*val format: PresentationFormat = TODO()
 
     //invoke :  que hace una sola cosa
     fun invoke(): String {
@@ -79,5 +79,5 @@ private fun getAirportPair(): Pair<AirportBooking, AirportBooking> {
                 2023, Month.JANUARY, 16, 17, 30, 0
             )
         )
-    )
+    )*/
 }

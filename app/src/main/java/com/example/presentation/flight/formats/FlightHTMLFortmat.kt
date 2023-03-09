@@ -1,14 +1,14 @@
 package com.example.presentation.flight.formats
 
 import com.example.domain.model.Flight
-import com.example.domain.presentation.Formatter
+import com.example.domain.presentation.utils.Formatter
 import java.time.format.DateTimeFormatter
 
 class FlightHTMLFortmat : Formatter<Flight> {
     override fun format(flight: Flight): String {
 
-        val departure = flight.departureArrivarBooking.first
-        val arrival = flight.departureArrivarBooking.second
+        val departure = flight.departureArrivalBooking.first
+        val arrival = flight.departureArrivalBooking.second
 
         return """
                 <p><strong>${flight.number}</strong><br/>
